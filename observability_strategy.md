@@ -1,9 +1,3 @@
----
-title: "Observability Strategy"
-author: "Anton"
-date: "2024-10-24"
----
-
 # Observability Strategy
 
 The observability strategy aims to ensure that each service owner can confidently answer the following key questions:
@@ -24,7 +18,7 @@ The responsibility of defining the health indicators lies with the owner of each
 - **Error Rate**: How many requests are failing? Track the number of 4xx/5xx responses.
 - **Throughput**: How many requests or transactions is the service handling per minute/second? 
 - **Resource Utilization**: Track CPU, memory, disk, and network usage.
-- **Other Business-Specific Metrics**: Depending on the nature of the service, other metrics such as the number of successful signups, orders processed, or funds transferred may be critical.
+- **Other Business-Specific Metrics:** Depending on the nature of the service, metrics such as the number of successful signups, orders processed, or funds transferred may be critical. These metrics can be event-driven, collected when specific events occur, or gauge-based, where scheduled jobs gather data at specific intervals, depending on the nature of what is being monitored.
 
 
 It is important to base these service health considerations around what the business goals of the service are. 
